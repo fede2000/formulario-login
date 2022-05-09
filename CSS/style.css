@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+
+:root{
+    --color-bg: #390099;
+    --font: font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--color-bg);
+}
+
+body, h1{
+    font-family: var(--font);
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.title{
+    max-width: 250px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+
+.login__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input__container{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    max-width: 600px;
+}
+
+.input__container label{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.input__container input{
+    margin-bottom: 10px;
+    height: 40px;
+    border: none;
+    padding: 0 20px 0;
+    border-radius: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.input__container button{
+    height: 45px;
+    border-radius: 20px;
+    background-color: #202157;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.input__container button:hover{
+    background-color: #13143b;
+}
+
+.img__container{
+    display: none;
+}
+
+/*  responsive */
+
+@media screen and (min-width:900px){
+    /* body{
+
+    } */
+
+    /* .container{
+        
+    } */
+
+
+    .login__container{
+        flex-direction: row;
+        background-color: #ff0054;
+        max-width: 700px;
+        width: 100%;
+        max-height: 300px;
+        height: 100%;
+        border-radius: 20px;
+
+    }
+    .input__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img__container{
+        display: block;
+        background-image: url("https://cdn141.picsart.com/309256231011211.png?type=webp&to=min&r=640");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+                
+    }
+
+    .input__container label,
+    .input__container input,
+    .input__container button{
+        width: 70%;
+    }
+
+    .title{
+        max-width: 500px;
+    }
+
+}
